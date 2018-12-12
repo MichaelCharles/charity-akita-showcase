@@ -1,0 +1,28 @@
+{
+    "pages": [{
+        "filename": "absolute",
+        "title": "Home",
+        "url": "http://charityakita.com"
+    }, {
+        "filename": "about",
+        "title": "About Charity Akita",
+        "hidden": false
+    }, {
+        "filename": "finances",
+        "title": "Public Financial Record",
+        "hidden": false
+    }, {
+        "filename": "board",
+        "title": "Board of Directors",
+        "hidden": false
+    }, {
+        "filename": "contact",
+        "title": "Contact Us",
+        "hidden": true
+    },{
+        "filename": "absolute",
+        "title": "Akita JET Wiki",
+        "url": "http://akitajet.com/wiki/Main_Page",
+        "hidden": false
+    }]
+}

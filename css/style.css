@@ -1,0 +1,591 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,200|Roboto:600,400,300,100);
+
+/*  JAPANESE FONT STACK
+
+	This is a basic Japanese language font stack. This will ensure that Japanese text will render with
+	the most common Japanese font already available to the user. As Japanese fonts tend to be very large
+	to account for the vast number of kanji, it is more common to use a font stack such as this than
+	to try to load a web font (although they do exist as well)  */
+
+.ja {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Roboto", sans-serif !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #212121;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: #3F51B5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #536DFE;
+}
+
+div {
+    position: relative;
+    display: block;
+}
+
+#flex-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/***************************
+ * HEADER
+ ***************************/
+
+nav {
+    position: relative;
+    z-index: 9000;
+    background-color: #F44336;
+    color: white;
+    overflow: hidden;
+    padding: 0 1.5em;
+    line-height: 2;
+    box-shadow: 0px 5px 10px 0px rgba(33, 33, 33, 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .no-shadow {
+    box-shadow: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+    margin-right: 15px;
+}
+
+nav h1 {
+    font-size: 18px;
+}
+
+.menu-button {
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 16px;
+}
+
+nav li.icon i {
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+    display: none;
+}
+
+
+nav a:link,
+nav a:visited,
+nav a:active {
+    color: white;
+    text-decoration: none;
+}
+
+
+/********************************
+ * Main
+ *******************************/
+
+
+/* WELCOME */
+
+#welcome {
+    position: relative;
+    z-index: 100;
+    background-image: url(../img/collage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.welcome-content {
+    background: rgba(33, 33, 33, 0.75);
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    
+}
+
+.content-wrap {
+    max-width: 800px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.welcome-content img {
+    height: 200px;
+    margin: -50px 0;
+}
+
+.welcome-content h1 {
+    font-family: Dosis;
+    font-weight: 200;
+    font-size: 300%;
+}
+
+.welcome-content p {
+    margin: 0 auto;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 125%;
+    line-height: 1.5;
+}
+
+#contact-button {
+    background-color: transparent;
+    color: white;
+    line-height: 2;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    font-size: 125%;
+    text-transform: uppercase;
+    margin: 1em 0;
+    font-family: Roboto;
+}
+
+#contact-button:hover {
+    text-shadow: 0px 0px white;
+    border: 1px solid white;
+}
+
+.welcome-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.update-box {
+    max-width: 600px;
+    width: 100%;
+}
+
+.button-box {
+    width: 100%;
+    max-width: 180px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.logo-box {
+    max-width: 180px;
+    width: 100%;
+}
+
+.welcome-message-box {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* ARTICLES */
+
+
+/*-----------CONTENT WRAP-------------*/
+
+.content-wrapper {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*-----------MEDIUM-------------*/
+
+.articles {
+    min-height: 100px;
+    width: 66%;
+}
+
+.section-header {
+    margin-left: 1em;
+}
+
+#medium-articles {
+    margin: 1em;
+    margin-right: 0;
+    padding: 1px;
+    /* This is to give the cards something
+                     to "push against" when margin is
+                     added to them on hover. */
+}
+
+.article-card {
+    position: relative;
+    z-index: 1000;
+    background: white;
+    display: flex;
+    box-shadow: 0px 1px 2px 0px rgba(33, 33, 33, 0.3);
+    margin-bottom: 1px;
+    min-height: 150px;
+    transition: all 300ms ease;
+}
+
+.read-more-card {
+    position: relative;
+    z-index: 1000;
+    margin-bottom: 1px;
+    text-align: right;
+    width: auto;
+    line-height: 3;
+    font-size: 110%;
+    color: #212121;
+    padding-right: 2em;
+}
+
+.article-card:hover {
+    margin-top: -3px;
+    margin-bottom: 4px;
+    z-index: 1001;
+    box-shadow: 0px 5px 10px 0px rgba(33, 33, 33, 0.3);
+}
+
+.article-media {
+    background-color: #f9f9f9;
+    width: 25%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article-content {
+    width: 75%;
+}
+
+.article-content h3 {
+    padding: 0 15px;
+    color: #212121;
+}
+
+p.preview-title {
+    font-size: 100%;
+    font-weight: 700;
+    padding: 0 15px;
+    color: #212121;
+}
+
+.article-content p {
+    padding: 0 15px;
+    color: #656565;
+}
+
+p.date {
+    padding: 0 15px;
+    color: #656565;
+    font-size: 75%;
+}
+
+
+/*-----------EVENTS-------------*/
+
+.facebook-sidebar {
+    width: 33%;
+    min-height: 100px;
+}
+
+#facebook-events {
+    margin: 1em;
+    padding: 1px;
+    /* This is to give the cards something
+                     to "push against" when margin is
+                     added to them on hover. */
+}
+
+.event-card {
+    position: relative;
+    z-index: 1000;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0px 1px 2px 0px rgba(33, 33, 33, 0.3);
+    margin-bottom: 1px;
+    transition: all 300ms ease;
+}
+
+.event-card:hover {
+    margin-top: -3px;
+    margin-bottom: 4px;
+    z-index: 1001;
+    box-shadow: 0px 5px 10px 0px rgba(33, 33, 33, 0.3);
+}
+
+.event-content {
+    padding: 1em;
+}
+
+.event-content h3 {
+    color: #212121;
+    margin-bottom: 5px;
+}
+
+.event-content p {
+    color: #656565;
+    word-wrap: break-word;
+}
+
+.event-date {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+
+/**********************
+ * Footer
+ **********************/
+
+footer {
+    align-self: baseline;
+    background-color: #666;
+    color: #ddd;
+    overflow: hidden;
+    line-height: 5;
+    width: 100%;
+    text-align: center;
+}
+
+.desktop-tablet-only {
+    display: inline-block;
+}
+
+.phone-only {
+    display: none;
+}
+
+.archive-notice {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.archive-notice-text {
+    font-size: 95%;
+    color: #555;
+}
+
+@media (max-width: 500px) {
+    .phone-only {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 500px) {
+    .desktop-tablet-only {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content-wrapper {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .articles {
+        width: auto;
+    }
+    .facebook-sidebar {
+        width: auto;
+    }
+    #medium-articles {
+        margin-right: 1em;
+    }
+    .event-media {
+        height: 200px;
+    }
+    .article-card {
+        flex-direction: column;
+    }
+    .article-media {
+        height: 200px;
+        width: auto;
+    }
+    .article-content {
+        width: auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .read-more-events {
+        padding: 15px;
+    }
+}
+
+
+/******************************
+ * Announcement
+ *****************************/
+
+.announcement {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.announcement p {
+    padding: 0 1em;
+}
+
+.announcement h3 {
+    padding: 0 1em;
+}
+
+.material-button {
+    color: #212121;
+    transition: all 250ms ease;
+    background-color: #e8e8e8;
+    padding: 1em;
+    text-transform: uppercase;
+    border: 0;
+    box-shadow: 0px 3px 6px 0px rgba(33, 33, 33, 0.3);
+    font-family: "Roboto", Helvetica, san-serif;
+    font-weight: 600;
+    margin: 0.5em 0.5em;
+    border-radius: 3px;
+    font-size: 90%;
+    min-width: 100px;
+}
+
+.material-button:hover {
+    background-color: #ededed;
+    box-shadow: 0px 6px 10px 0px rgba(33, 33, 33, 0.3);
+}
+
+.material-button:focus,
+.material-button:active {
+    background-color: #f4f4f4;
+    box-shadow: 0px 6px 10px 0px rgba(33, 33, 33, 0.3);
+    outline: none;
+}
+
+.material-button i {
+    margin-right: 0.5em;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.primary-button {
+    background-color: #536DFE;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #839DFF;
+}
+
+.primary-button:focus {
+    background-color: #A3BDFF;
+}
+
+
+
+
+
+.material-spinner {
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    border: 5px transparent solid;
+    border-top: 5px #3F51B5 solid;
+    transform: rotate(0deg);
+    animation: material-spinner 4s infinite;
+}
+
+@keyframes material-spinner {
+    0% {
+        transform: rotate(0deg);
+        border-top: 5px #3F51B5 solid;
+    }
+    25% {
+        transform: rotate(360deg);
+        border-top: 5px #F44336 solid;
+    }
+    50% {
+        transform: rotate(720deg);
+        border-top: 5px #FFC107 solid;
+    }
+    75% {
+        transform: rotate(1080deg);
+        border-top: 5px #4CAF50 solid;
+    }
+    100% {
+        transform: rotate(1440deg);
+        border-top: 5px #3F51B5 solid;
+    }
+}
+
+
+
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(33,33,33,0.3);
+    z-index: 90000;
+    display: none;
+}
+
+.material-menu {
+    background: #fafafa;
+    box-shadow: 0px 1px 2px 1px rgba(33,33,33,0.3);
+    height: 100vh;
+    width: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: -300px;
+    top: 0;
+}
+
+.material-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.material-menu li {
+    padding: 1em;
+}
+
+.material-menu li:hover {
+    background: rgba(33,33,33,0.05);
+}
+
+.material-menu a {
+    color: #757575;
+}
+
+.material-menu h4 {
+    padding: 1em;
+}
