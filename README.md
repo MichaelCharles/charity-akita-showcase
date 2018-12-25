@@ -1,5 +1,5 @@
 # Charity Akita
 
-### "chartiyakita.com"
+I managed the Charity Akita homepage from around 2015 until 2017. This is a working copy of the website that has been saved largely for portfolio purposes.
 
-This is the homepage for Charity Akita, a charity fundraising organization based in Akita, Japan. 
+[You can see it live on GitHub pages.](https://mcaubrey.github.io/charity-akita-showcase)
