@@ -2,7 +2,7 @@
     "pages": [{
         "filename": "absolute",
         "title": "Home",
-        "url": "http://charityakita.com"
+        "url": "/charity-akita-showcase/"
     }, {
         "filename": "about",
         "title": "About Charity Akita",
