@@ -61,7 +61,7 @@ div {
     width: 100%;
     position: relative;
     z-index: 100;
-    background-image: url("/sumo/img/purple.jpg");
+    background-image: url("../img/purple.jpg");
     background-color: #ce95d9;
     background-size: cover;
     background-position: center;
