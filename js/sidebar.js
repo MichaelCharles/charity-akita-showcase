@@ -30,7 +30,7 @@ $("document").ready(function () {
     }
 
 
-    $.getJSON("../pages/valid-pages.json", function (data) {
+    $.getJSON("https://mcaubrey.github.io/charity-akita-showcase/pages/valid-pages.json", function (data) {
         var $linkList = buildMenuList(data.pages);
         console.log($linkList);
         $sidebar.append($linkList);
