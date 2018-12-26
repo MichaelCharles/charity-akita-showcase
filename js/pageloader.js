@@ -67,7 +67,7 @@ function buildPageList(data, $pageList, index) {
 $("document").ready(function(){
     var urlParams = parseURLParams(window.location.href);
 
-    $.getJSON("/../pages/valid-pages.json", function(data){
+    $.getJSON("/charity-akita-showcase/pages/valid-pages.json", function(data){
 
     if (urlParams.p) {
         var pageData = getPageData(urlParams.p, data.pages);
