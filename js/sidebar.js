@@ -14,8 +14,8 @@ $("document").ready(function () {
         }
         if (data[index]) {
             if (!data[index].hidden) {
-                var listItemURL = "./pages/?p=" + data[index].filename
-                if (listItemURL === "./pages/?p=absolute") {
+                var listItemURL = "/charity-akita-showcase/pages/?p=" + data[index].filename
+                if (listItemURL === "/charity-akita-showcase/pages/?p=absolute") {
                     listItemURL = data[index].url;
                 }
                 var $listItem = $("<a href='" + listItemURL + "'><li>" + data[index].title + "</li></a>");
